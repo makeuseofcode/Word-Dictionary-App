@@ -27,13 +27,13 @@ frame1.pack(pady=15)
 
 frame2 = Frame(root)
 Label(frame2, text="Synonym: ", font=("Arial 18 bold")).pack(side=LEFT)
-synonym = Label(frame2, text="", font=("Arial 18"))
+synonym = Label(frame2, text="", font=("Arial 18"),wraplength=1000)
 synonym.pack()
 frame2.pack(pady=15)
 
 frame3 = Frame(root)
 Label(frame3, text="Antonym: ", font=("Arial 18 bold")).pack(side=LEFT)
-antonym = Label(frame3, text="", font=("Arial 18"))
+antonym = Label(frame3, text="", font=("Arial 18"),wraplength=1000)
 antonym.pack(side=LEFT)
 frame3.pack(pady=20)
 
