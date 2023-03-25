@@ -4,12 +4,12 @@ from PyMultiDictionary import MultiDictionary
 dictionary = MultiDictionary()
 root = Tk()
 root.title("Word Dictionary Using Python")
-root.geometry("1250x500")
+root.geometry("1250x750")
 
 def dict():
     meaning.config(text=dictionary.meaning('en', word.get())[1])
-    synonym.config(text=dictionary.synonym('en', word.get())[0])
-    antonym.config(text=dictionary.antonym('en', word.get())[0])
+    synonym.config(text=dictionary.synonym('en', word.get()))
+    antonym.config(text=dictionary.antonym('en', word.get()))
 
 Label(root, text="Word Dictionary Using Python", font=("Arial 36 bold"), fg="Purple").pack(pady=10)
 
